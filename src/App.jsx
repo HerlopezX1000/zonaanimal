@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import Inicio from './components/pages/Inicio'; // Importa el componente Inicio
+import Inicio from "./components/pages/Inicio.jsx";
 
 function App() {
   return (
