@@ -1,0 +1,160 @@
+
+/* src/styles/components/header.css */
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: linear-gradient(135deg, var(--verde) 0%, var(--verde-claro) 100%);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: padding 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .header.scrolled {
+    padding: 0.5rem 0; /* Reduce el tamaño al hacer scroll */
+    background-color: rgba(13, 155, 113, 0.9); /* Verde semi-opaco */
+  }
+  
+  .contenedor { /* Esta clase se define en globales.css */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-logo img {
+    height: 5rem; /* Ajusta según el tamaño de tu logo */
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .login-link {
+    color: var(--blanco);
+    font-size: 2.5rem;
+  }
+  
+  .login-link:hover {
+    color: var(--amarillo-claro);
+  }
+  
+  .navbar-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu a {
+    color: var(--blanco);
+    font-size: 1.8rem;
+    font-family: var(--fuente-textos);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-menu a:hover {
+    color: var(--amarillo-claro);
+    transform: translateY(-2px); /* Sube un poco al pasar el ratón */
+  }
+  
+  .navbar-menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--negro);
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-menu a:hover::after {
+    width: 100%; /* Línea que crece al hover */
+  }
+  
+  .hamburger {
+    display: none; /* Oculto en escritorio */
+    background: none;
+    border: none;
+    color: var(--blanco);
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .mobile-menu {
+    display: none; /* Oculto por defecto */
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .navbar-menu {
+      display: none; /* Oculta el menú normal en móviles */
+    }
+  
+    .hamburger {
+      display: block; /* Muestra la hamburguesa en móviles */
+    }
+  
+    .mobile-menu {
+      display: flex;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70%;
+      background: linear-gradient(135deg, var(--verde) 0%, var(--verde-claro) 100%);
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+      transform: translateX(100%);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0; /* Empieza invisible */
+    }
+    
+    .mobile-menu.open {
+      transform: translateX(0);
+      opacity: 1; /* Aparece con fade-in */
+    }
+  
+    .mobile-menu ul {
+      list-style: none;
+      padding: 2rem;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+    }
+  
+    .mobile-menu a {
+      color: var(--blanco);
+      font-size: 2rem;
+      font-family: var(--fuente-textos);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .mobile-menu a:hover {
+      color: var(--amarillo-claro);
+    }
+  
+    .contenedor {
+      flex-wrap: wrap;
+    }
+  
+    .header-logo {
+      order: -1; /* Logo primero en móviles */
+    }
+  
+    .header-right {
+      flex: 1;
+      justify-content: flex-end;
+    }
+  }

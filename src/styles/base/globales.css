@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@900&family=Roboto&display=swap');
+
+
+/* Variables CSS */
+:root {
+  --amarillo-claro: #ffe200;
+  --amarillo-oscuro: #edae01;
+  --verde: #0d9b71;
+  --blanco: #f7f7f7;
+  --negro: #242424;
+  --verde-claro: #84b708;
+  --gris: #d3d3d3;
+  --gris-blanco: #f2f2f2;
+
+  --fuente-textos: "Roboto", serif;
+  --fuente-titulos: "Oswald", serif;
+}
+
+/*ternuba varuabkes*/
+
+/*=============inicia  VALORES GOBLALES=========*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-padding-top: 0rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuente-textos);
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--negro);
+}
+
+p {
+  font-size: 1.7rem;
+  color: var(--negro);
+  line-height: 1.5;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0 0 5rem 0;
+  font-weight: 900;
+  font-family: var(--fuente-titulos);
+  letter-spacing: 0.3rem; 
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}

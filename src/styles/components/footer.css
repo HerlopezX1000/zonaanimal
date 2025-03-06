@@ -1,0 +1,130 @@
+
+/* src/styles/components/footer.css */
+
+.footer {
+    width: 100%;
+    background-color: var(--gris-blanco);
+    color: var(--negro);
+    padding: 2rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid var(--gris);
+  }
+  
+  .footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-redes {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-redes a {
+    color: var(--negro);
+    font-size: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-redes a:hover {
+    color: var(--verde);
+  }
+  
+  .footer-logo img {
+    height: 8rem; /* Ajusta según tu logo */
+  }
+  
+  .footer-menu {
+    flex: 1; /* Ocupa espacio disponible para centrar */
+    text-align: center; /* Centra visualmente el menú */
+  }
+  
+  .footer-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Menú vertical en escritorio */
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-menu a {
+    color: var(--negro);
+    font-size: 1.6rem;
+    font-family: var(--fuente-textos);
+    transition: color 0.3s ease;
+  }
+  
+  .footer-menu a:hover {
+    color: var(--verde);
+  }
+  
+  .footer-contacto {
+    flex: 1; /* Ocupa espacio disponible a la derecha */
+    text-align: left; /* Alineación derecha para los datos */
+  }
+  
+  .contacto-datos {
+    display: flex; /* Asegúrate de que sea flexbox */
+    flex-direction: column; /* Datos en columna (vertical) */
+    gap: 0.5rem;
+    align-items: flex-end; /* Alinea a la derecha dentro de contacto */
+  }
+  
+  .footer-contacto p {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .footer-contacto strong {
+    font-size: 1.7rem;
+    font-family: var(--fuente-titulos);
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .footer-contenido {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .footer-logo {
+      order: -1; /* Logo primero en móviles */
+    }
+  
+    .footer-redes {
+      justify-content: center;
+    }
+  
+    .footer-logo img {
+      height: 6rem; /* Logo más pequeño en móviles */
+    }
+  
+    .footer-menu {
+      text-align: center;
+    }
+  
+    .footer-menu ul {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .footer-contacto {
+      text-align: center;
+    }
+  
+    .contacto-datos {
+      align-items: center; /* Centra los datos en móviles */
+      text-align: center;
+    }
+  }
