@@ -1,6 +1,8 @@
 
 /* src/styles/components/header.css */
 
+@import '../base/globales.css';
+
 .header {
     position: sticky;
     top: 0;

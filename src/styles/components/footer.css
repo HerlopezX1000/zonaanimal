@@ -1,5 +1,6 @@
 
 /* src/styles/components/footer.css */
+@import '../base/globales.css';
 
 .footer {
     width: 100%;
@@ -77,7 +78,7 @@
     display: flex; /* Asegúrate de que sea flexbox */
     flex-direction: column; /* Datos en columna (vertical) */
     gap: 0.5rem;
-    align-items: flex-end; /* Alinea a la derecha dentro de contacto */
+    align-items: flex-start; /* Alinea a la derecha dentro de contacto */
   }
   
   .footer-contacto p {

@@ -11,13 +11,13 @@ function Footer() {
         {/* Izquierda: Logo con redes encima */}
         <div className="footer-logo">
           <div className="footer-redes">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/DraSofiaMVZ" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/zonaanimal_dra.sofia_mvz/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@veterinaria_zona_animal" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
               <i className="fab fa-tiktok"></i>
             </a>
           </div>
@@ -40,7 +40,7 @@ function Footer() {
         <div className="footer-contacto">
           <div className="contacto-datos">
             <p><strong>Contacto</strong></p>
-            <p>+38 (095) 71 06 104</p>
+            <p>+57 323 2904936</p>
             <p>Barrio Alfonso Lopez Calle 8, Cimitarra, Santander, Colombia</p>
           </div>
         </div>
