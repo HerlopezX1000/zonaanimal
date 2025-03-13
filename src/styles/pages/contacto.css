@@ -1,0 +1,132 @@
+@import '../base/globales.css';
+
+.contacto-directo {
+    padding-top: 7rem;
+    background-color: var(--gris-blanco);
+    display: block;
+
+    
+}
+.contacto-directo .contenedor {
+    display: block;
+}
+.contacto-directo h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contacto-directo ul {
+    display: flex;
+    margin: 0 auto;
+    list-style-type: none;
+    padding-bottom: 4rem;
+}
+
+.contacto-directo ul li {
+    margin: 0 auto;
+}
+
+.contacto-directo a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--amarillo-oscuro);
+    margin:  0 1rem;
+}
+
+
+
+
+.formulario-contacto {
+  padding: 5rem 0;
+   
+  .contenedor {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .contacto-formulario {
+    flex: 1;
+    background-color: var(--blanco);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    h3 {
+        color: var(--verde);
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .campo {
+        margin-bottom: 1.5rem;
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--amarillo-oscuro);
+            border-radius: 0.5rem;
+            transition: border-color 0.3s ease;
+
+            &:hover {
+                border-color: var(--verde);
+            }
+        }
+    }
+
+    button {
+        background-color: var(--verde);
+        border: none;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        color: var(--blanco);
+        transition: 0.5s ease;
+
+        
+    }
+    button:hover {
+        background-color: var(--amarillo-oscuro);
+        color: var(--negro);
+    }
+
+
+    .campo {
+        &:nth-child(1) {
+            order: 2;
+        }
+        &:nth-child(2) {
+            order: 1;
+        }
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        padding-top: 2rem;
+        align-items: center;
+
+        i {
+            color: var(--verde);
+            font-size: 2rem;
+            padding-right: 2rem;
+        }
+    }
+  }
+}
+
+
+.mapa {
+    iframe {
+        width: 100%;
+        height: 60rem;
+    }
+}

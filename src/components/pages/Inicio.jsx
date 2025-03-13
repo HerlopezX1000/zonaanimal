@@ -159,6 +159,50 @@ function Inicio() {
                         </a>
                    </div>
                 </div>
+
+            </section>
+
+
+
+
+            <h1>Oferta de la Semana</h1>
+
+            <section className='imagen-fondo'>
+                <div className='contenedor-perro'>
+                    <div className='texto'>
+                        <h2>Baño y Peluqueria</h2>
+                        <p>Aprovecha nuestra gran oferta de la semana y conciente a tu mascota.</p>
+                        <a href="#">
+                             <button>Saber mas</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <h1>¿Porque Elegirnos?</h1>
+
+            <section className='porque-elegirnos'>
+                <div className="contenedor">
+                    <div className="razones">
+                        <div className="razon">
+                            <i className='fa-solid fa-gift'></i>
+                            <h3>Cuidado profesional y humano</h3>
+                            <p> Atención experta con amor por cada mascota</p>
+                        </div>
+                        <div className="razon-centro">
+                            <i className='fa-solid fa-gift'></i>
+                            <h3>Atención con calidez</h3>
+                            <p>Trato amable para dueños y mascotas</p>
+                        </div>
+                        <div className="razon">
+                            <i className='fa-solid fa-gift'></i>
+                            <h3>Cuidado integral siempre</h3>
+                            <p>Servicios completos para la salud de tu mascota</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
 

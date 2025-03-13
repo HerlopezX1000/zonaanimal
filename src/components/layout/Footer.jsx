@@ -41,7 +41,9 @@ function Footer() {
           <div className="contacto-datos">
             <p><strong>Contacto</strong></p>
             <p>+57 323 2904936</p>
-            <p>Barrio Alfonso Lopez Calle 8, Cimitarra, Santander, Colombia</p>
+            <p>Barrio Alfonso Lopez Calle 8 # 7-20B</p>
+            <p>Cimitarra, Santander</p>
+            <p>Colombia</p>
           </div>
         </div>
       </div>
